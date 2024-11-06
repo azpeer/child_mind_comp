@@ -3,8 +3,13 @@
 Project Description: 
 
 Contributors:
+
 Azfal Peermohammed
+
 Victor Zhuang 
+
 Sabbal 
+
 Andres
+
 Shane Epstein
