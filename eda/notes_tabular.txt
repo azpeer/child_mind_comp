@@ -1,0 +1,28 @@
+These columns are all the columns that include survey questions But they are answered numerically 1-5. These columns are our target variables. We take the sum of all of the responses and some conversion happens to sii. May be a problem for model fitting, or maybe we have to predict what the answers would be. Important backstory behind some of the columns.
+* CGAS: Children's global assessment scale 
+
+        Should be a score between 1-90/1-100 but for some reason there is a value of 999. Maybe this is a mistake. Could           clip this to 99.
+    
+* Physical-BMI:
+    
+        It seems like there are 7 observations with a BMI of 0. I think you would die. Look into this.
+    
+* Physical-Weight:
+
+        61 individuals with a weight of 0
+    
+* Diastolic/Systolic Blood Pressure:
+
+            This is the blood pressure between heart beats. Above 80 is considered high. Healthcare providers diagnose high blood pressure differently in children than in adults because healthy blood pressure levels change as a child grows. High blood pressure in children occurs when a child’s blood pressure is equal to or higher than that of 95% of other children of the same age, sex assigned at birth and height.
+
+* FitnessGram Vitals and Treadmill:
+
+        NHANES treadmill protocol:
+            
+            The CV fitness exam was performed by trained health technicians. The protocol is a submaximal exercise test. Based on gender, age, body mass index, and self-reported level of physical activity, participants are assigned to one of eight treadmill test protocols. The goal of each protocol is to elicit a heart rate that is approximately 75 percent of the age-predicted maximum (220-age) by the end of the test. Each protocol includes a 2-minute warm-up, two 3-minute exercise stages, and a 2-minute cool down period.
+
+        Heart rate was monitored continuously using an automated monitor with four electrodes connected to thorax and abdomen of the participant and was recorded at the end of warm-up, each exercise stage, and each minute of recovery. Blood pressure was measured at the end of each stage. At the end of warm-up and each exercise stage, participants were asked to rate their perceived exertion using the Borg scale.
+
+        The main outcome of this component is the estimated maximal oxygen uptake (VO2max). Based on gender and age specific criteria, the estimated VO2max is also categorized and reported as “low”, “moderate” or “high” level of cardiovascular fitness in the present dataset.
+
+        Detailed descriptions of the protocol are provided in the NHANES Cardiovascular Fitness Procedure Manual (National Center for Health Statistics, 2004).
